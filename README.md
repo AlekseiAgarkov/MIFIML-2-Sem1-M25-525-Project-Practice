@@ -129,3 +129,18 @@
 ![exposed_area.png](docs%2Fimg%2Fexposed_area.png)
 *Пространство моделирования и область загрязнения*
 
+### Выборка для прогнозирования
+
+TODO
+
+## Модели
+
+TODO
+
+## Описание функционала, реализованного для проектной практики
+
+TODO
+
+## Материалы
+- [Ноутбук "20251214 - Train and upload model"](https://colab.research.google.com/drive/1vsM7LGdpeMFpMvkMexOowuMjgGZ51ihD)
+- Ноутбук "Использование предобученной модели"
