@@ -79,7 +79,7 @@
 
 Всего для обучающей выборки было сгенерировано 2000 симуляций.
 
-Данные доступны по ссылке [sim_data_metrics_20251210.csv](https://github.com/AlekseiAgarkov/MIFIML-2-Sem1-M25-525-Project-Practice/tree/main/data/sim_data_metrics_20251210.csv).
+Данные доступны по ссылке [sim_data_metrics_20251214.csv](https://github.com/AlekseiAgarkov/MIFIML-2-Sem1-M25-525-Project-Practice/tree/main/data/sim_data_metrics_20251214.csv).
 
 ## Моделирование воздействия загрязнителя
 
