@@ -63,8 +63,8 @@
 ![one_sim_vizualized.png](docs%2Fimg%2Fone_sim_vizualized.png)
 *Визуализация одной симуляции*
 
-![Agentic Model 4 simulations.gif](docs%2Fimg%2FAgentic%20Model%204%20simulations.gif)
-*Визуализация четырёх симуляций*
+![Agentic Model 4 simulations 90d.gif](docs%2Fimg%2FAgentic%20Model%204%20simulations%2090d.gif)
+*Визуализация четырёх симуляций в течение 90 дней*
 
 ## Данные
 ### Обучающая выборка
