@@ -36,6 +36,8 @@
 - максимально возможный иммунитет агента;
 - коэффициент снижения инфективности при применении маски.
 
+Данные доступны по ссылке [sim_data_metrics_20251210.csv](https://github.com/AlekseiAgarkov/MIFIML-2-Sem1-M25-525-Project-Practice/tree/main/data/sim_data_metrics_20251210.csv).
+
 Количество агентов, находящихся в загрязнённой области, и [остальные параметры](https://github.com/AlekseiAgarkov/AgenticInfectiousDiseaseTransmissionModels/blob/main/configs/project_practice/seir_neighbors_project_practice.toml) 
 оставались зафиксированы.
 
