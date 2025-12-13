@@ -134,8 +134,8 @@
 TODO
 
 ## Модели
-
-TODO
+- [20251214-agentic_disease_spread_catboost_pollutant-infected_90d](https://huggingface.co/agarkov-aleksei1/20251214-agentic_disease_spread_catboost_pollutant-infected_90d)
+- [20251214-agentic_disease_spread_catboost_pollutant_with_beta-infected_90d](https://huggingface.co/agarkov-aleksei1/20251214-agentic_disease_spread_catboost_pollutant_with_beta-infected_90d)
 
 ## Описание функционала, реализованного для проектной практики
 
