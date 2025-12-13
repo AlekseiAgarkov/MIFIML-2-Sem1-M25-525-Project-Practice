@@ -143,4 +143,6 @@ TODO
 
 ## Материалы
 - [Ноутбук "20251214 - Train and upload model"](https://colab.research.google.com/drive/1vsM7LGdpeMFpMvkMexOowuMjgGZ51ihD)
+  - [Colab версия](https://colab.research.google.com/drive/1vsM7LGdpeMFpMvkMexOowuMjgGZ51ihD)
+  - [.ipynb версия](https://github.com/AlekseiAgarkov/MIFIML-2-Sem1-M25-525-Project-Practice/blob/main/notebooks/20251214_Train_and_upload_model.ipynb)
 - Ноутбук "Использование предобученной модели"
