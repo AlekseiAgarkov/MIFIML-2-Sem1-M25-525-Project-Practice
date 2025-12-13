@@ -8,8 +8,9 @@
 ![1651618612-pandemic-timeline-4.png](docs%2Fimg%2F1651618612-pandemic-timeline-4.png)
 *Иллюстрация: [Pandemic Readiness](https://www.safer.me/virus-features/pandemic-readiness/)*
 
-Традиционные дифференциальные уравнения, описывающие компартментальные модели, зачастую не учитывают гетерогенность 
-популяции и пространственную структуру контактов. Агентное моделирование позволяет преодолеть эти ограничения, 
+Традиционные дифференциальные уравнения, описывающие [компартментальные модели](https://en.wikipedia.org/wiki/Compartmental_models_(epidemiology)), 
+зачастую не учитывают гетерогенность популяции и пространственную структуру контактов. 
+Агентное моделирование позволяет преодолеть эти ограничения, 
 явно описывая поведение и взаимодействие отдельных индивидуумов (агентов) в популяции, что делает его перспективным 
 для анализа сложных, нелинейных эффектов распространения заболеваний, включая влияние загрязнений окружающей среды, 
 использование индивидуальных средств защиты, сезонной вариативности иммунитета и эволюции патогена.
@@ -36,8 +37,6 @@
 - максимально возможный иммунитет агента;
 - коэффициент снижения инфективности при применении маски.
 
-Данные доступны по ссылке [sim_data_metrics_20251210.csv](https://github.com/AlekseiAgarkov/MIFIML-2-Sem1-M25-525-Project-Practice/tree/main/data/sim_data_metrics_20251210.csv).
-
 Количество агентов, находящихся в загрязнённой области, и [остальные параметры](https://github.com/AlekseiAgarkov/AgenticInfectiousDiseaseTransmissionModels/blob/main/configs/project_practice/seir_neighbors_project_practice.toml) 
 оставались зафиксированы.
 
@@ -62,12 +61,6 @@
 (возраст, иммунитет, дисциплина использования средств индивидуальной защиты), патогенам (изменение инфективности) и
 среде (загрязнения части пространства взаимодействия агентов).
 
-![one_sim_vizualized.png](docs%2Fimg%2Fone_sim_vizualized.png)
-*Визуализация одной симуляции*
-
-![Agentic Model 4 simulations 90d.gif](docs%2Fimg%2FAgentic%20Model%204%20simulations%2090d.gif)
-*Визуализация четырёх симуляций в течение 90 дней*
-
 ## Данные
 ### Обучающая выборка
 Обучающие данные для модели сгенерированы при помощи симулятора 
@@ -85,6 +78,35 @@
 - `seed` - random seed значение симуляции. 
 
 Всего для обучающей выборки было сгенерировано 2000 симуляций.
+
+Данные доступны по ссылке [sim_data_metrics_20251210.csv](https://github.com/AlekseiAgarkov/MIFIML-2-Sem1-M25-525-Project-Practice/tree/main/data/sim_data_metrics_20251210.csv).
+
+## Моделирование воздействия загрязнителя
+
+### Что из себя представляет агент в рамках симуляции?
+Агент - стохастический конечный автомат, смоделированный классом [SEIRNeighborsFSMExtended](https://github.com/AlekseiAgarkov/AgenticInfectiousDiseaseTransmissionModels/blob/main/src/models/seir.py#L168) 
+с использованием библиотек [simpy](https://simpy.readthedocs.io/en/latest/) и [transitions](https://github.com/pytransitions/transitions).
+
+Состояния агента определены моделью [SEIR](https://web.pdx.edu/~gjay/teaching/mth271_2020/html/09_SEIR_model.html):
+* S — восприимчивые к болезни (могут заразиться);
+* E — подвергшиеся воздействию (заражены, но ещё не заразны; эта стадия учитывает инкубационный период);
+* I — инфицированные (заразны и распространяют болезнь);
+* R — выздоровели.
+
+Переходы между состояниями описываются вероятностной логикой взаимодействия с другими агентами.
+![SEIRNeighborsFSMExtended.png](docs%2Fimg%2FSEIRNeighborsFSMExtended.png)
+
+С деталями реализации можно ознакомиться в репозтории проекта [SEIRNeighborsFSMExtended](https://github.com/AlekseiAgarkov/AgenticInfectiousDiseaseTransmissionModels/blob/main/src/models/seir.py#L168).
+
+В рамках одной симуляции происходят взаимодействия агентов в разных состояниях. 
+"Инфицированные" агенты могут "заражать" других агентов.
+
+![one_sim_vizualized.png](docs%2Fimg%2Fone_sim_vizualized.png)
+*Визуализация одной симуляции*
+
+![Agentic Model 4 simulations 90d.gif](docs%2Fimg%2FAgentic%20Model%204%20simulations%2090d.gif)
+*Визуализация четырёх симуляций в течение 90 дней*
+
 
 ### Как моделируется взаимодействие агентов
 Взаимодействие агентов моделируется следующим образом:
