@@ -137,12 +137,21 @@
 - [20251214-20251214-agentic_disease_spread_catboost_pollutant_with_beta-infected_90d-dataset](https://huggingface.co/datasets/agarkov-aleksei1/20251214-agentic_disease_spread_catboost_pollutant_with_beta-infected_90d-dataset)
 - [20251214-agentic_disease_spread_catboost_pollutant-infected_90d-dataset](https://huggingface.co/datasets/agarkov-aleksei1/20251214-agentic_disease_spread_catboost_pollutant-infected_90d-dataset)
 
-## Выборка для прогнозирования
+## Выборка для прогнозирования и валидации
+Для прогнозирования и валидации подготовлена выборка с использованием параметров:
+- `beta` - коэффициент инфективности патогена в диапазоне `[0.01, 0.09, 0.17, 0.25]`;
+- `pollutant_immunity_reduction` - коэффициент снижения иммунитета у агентов, подверженных загрязнению, в диапазоне `[0, 0.1, 0.2, 0.3]`;
+- `initially_infected` - количество изначально заражённых агентов в диапазоне `[4, 6, 8, 10]`;
+- `lowest_immunity` - минимально возможный иммунитет агента `[0.1, 0.2, 0.3]`;
+- `highest_immunity` - максимально возможный иммунитет агента `[0.6 , 0.75, 0.9]`;
+- `mask_beta_penalty` - снижение инфективности при применении маски `[0.25, 0.5]`;
+- `seed` - random seed значение симуляции. 
 
-TODO
+Всего для выборки прогнозирования и валидации было сгенерировано 50 симуляций. Выборка доступна по адресу:
+https://github.com/AlekseiAgarkov/MIFIML-2-Sem1-M25-525-Project-Practice/blob/main/data/project_practice_20251214.csv
 
 ## Материалы
 - [Ноутбук "20251214 - Train and upload model"](https://colab.research.google.com/drive/1vsM7LGdpeMFpMvkMexOowuMjgGZ51ihD)
   - [Colab версия](https://colab.research.google.com/drive/1vsM7LGdpeMFpMvkMexOowuMjgGZ51ihD)
   - [.ipynb версия](https://github.com/AlekseiAgarkov/MIFIML-2-Sem1-M25-525-Project-Practice/blob/main/notebooks/20251214_Train_and_upload_model.ipynb)
-- Ноутбук "Использование предобученной модели"
+- [Ноутбук "20251214 - Model Usage"](https://colab.research.google.com/drive/1RhfjL2WVjdpBdHr2fB1-s5X0zWAU-xnv?usp=sharing)
