@@ -27,6 +27,13 @@
 В проекте будет исследоваться один из возможных сценариев оценки последствий изменения входных параметров рассчитываемой 
 модели распространения инфекционных заболеваний с использованием агентного подхода (аналитическая методология "What if?").
 
+### Какое отношение данное исследование имеет к экологии?
+Известно, что загрязнение воздуха снижает иммунитет и способствует развитию респираторных заболеваний:
+- [Effects of atmospheric suspended particulate matter on the immune system](https://romj.org/2024-0103) by Elena V. Kondratyeva, Tatyana I. Vitkina
+- [Particulate matter impairs immune system function by up-regulating inflammatory pathways and decreasing pathogen response gene expression](https://www.nature.com/articles/s41598-023-39921-w) by Marín-Palma, D. et al
+- [Association of short-term PM2.5 exposure with airway innate immune response, microbiota and metabolism alterations in human airways](https://www.sciencedirect.com/science/article/abs/pii/S0269749124001490) by Shuaiqi Zhao et al
+- [Fine particulate matter manipulates immune response to exacerbate microbial pathogenesis in the respiratory tract](https://pmc.ncbi.nlm.nih.gov/articles/PMC11372469/) by Jason Ma et al
+
 Для проекта был смоделирован сценарий экспозиции части агентов повышенному уровню загрязнителя, снижающего иммунитет.
 
 Было проведено 2000 симуляций, в которых варьировались следующие параметры:
@@ -45,7 +52,6 @@
 
 Нам предстоит выяснить насколько качественно можно спрогнозировать суммарное количество инфицированных спустя 
 90 дней от даты первичного инфицирования, зная:
-- общее количество агентов;
 - количество изначально заражённых агентов;
 - минимально возможный иммунитет агента;
 - максимально возможный иммунитет агента;
