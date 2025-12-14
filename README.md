@@ -129,15 +129,15 @@
 ![exposed_area.png](docs%2Fimg%2Fexposed_area.png)
 *Пространство моделирования и область загрязнения*
 
-### Выборка для прогнозирования
-
-TODO
-
 ## Модели
 - [20251214-agentic_disease_spread_catboost_pollutant-infected_90d](https://huggingface.co/agarkov-aleksei1/20251214-agentic_disease_spread_catboost_pollutant-infected_90d)
 - [20251214-agentic_disease_spread_catboost_pollutant_with_beta-infected_90d](https://huggingface.co/agarkov-aleksei1/20251214-agentic_disease_spread_catboost_pollutant_with_beta-infected_90d)
 
-## Описание функционала, реализованного для проектной практики
+## Датасеты
+- [20251214-20251214-agentic_disease_spread_catboost_pollutant_with_beta-infected_90d-dataset](https://huggingface.co/datasets/agarkov-aleksei1/20251214-agentic_disease_spread_catboost_pollutant_with_beta-infected_90d-dataset)
+- [20251214-agentic_disease_spread_catboost_pollutant-infected_90d-dataset](https://huggingface.co/datasets/agarkov-aleksei1/20251214-agentic_disease_spread_catboost_pollutant-infected_90d-dataset)
+
+## Выборка для прогнозирования
 
 TODO
 
