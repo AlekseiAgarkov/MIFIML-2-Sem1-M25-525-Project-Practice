@@ -136,14 +136,20 @@
 *Пространство моделирования и область загрязнения*
 
 ## Модели
-- [20251214-agentic_disease_spread_catboost_pollutant-infected_90d](https://huggingface.co/agarkov-aleksei1/20251214-agentic_disease_spread_catboost_pollutant-infected_90d)
-- [20251214-agentic_disease_spread_catboost_pollutant_with_beta-infected_90d](https://huggingface.co/agarkov-aleksei1/20251214-agentic_disease_spread_catboost_pollutant_with_beta-infected_90d)
+Было обучено 2 модели. Карточки моделей доступны по ссылкам: 
+- [20251214-agentic_disease_spread_catboost_pollutant-infected_90d](https://huggingface.co/agarkov-aleksei1/20251214-agentic_disease_spread_catboost_pollutant-infected_90d) - модель, в которой учитывается эффект от загрязнителя;
+- [20251214-agentic_disease_spread_catboost_pollutant_with_beta-infected_90d](https://huggingface.co/agarkov-aleksei1/20251214-agentic_disease_spread_catboost_pollutant_with_beta-infected_90d) - модель, в которой учитывается эффект 
+от загрязнителя и параметр инфективности β.
+
+Обе модели прогнозируют количество инфицированных агентов к 90-му дню симуляции. 
 
 ## Датасеты
+### Обучающие выборки
+Обучающие выборки, использованные для обучения моделей:
 - [20251214-20251214-agentic_disease_spread_catboost_pollutant_with_beta-infected_90d-dataset](https://huggingface.co/datasets/agarkov-aleksei1/20251214-agentic_disease_spread_catboost_pollutant_with_beta-infected_90d-dataset)
 - [20251214-agentic_disease_spread_catboost_pollutant-infected_90d-dataset](https://huggingface.co/datasets/agarkov-aleksei1/20251214-agentic_disease_spread_catboost_pollutant-infected_90d-dataset)
 
-## Выборка для прогнозирования и валидации
+### Выборка для прогнозирования и валидации
 Для прогнозирования и валидации подготовлена выборка с использованием параметров:
 - `beta` - коэффициент инфективности патогена в диапазоне `[0.01, 0.09, 0.17, 0.25]`;
 - `pollutant_immunity_reduction` - коэффициент снижения иммунитета у агентов, подверженных загрязнению, в диапазоне `[0, 0.1, 0.2, 0.3]`;
