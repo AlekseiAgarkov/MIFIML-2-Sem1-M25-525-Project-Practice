@@ -145,7 +145,7 @@
 
 ## Датасеты
 ### Обучающие выборки
-Обучающие выборки, использованные для обучения моделей:
+Выборки, использованные для обучения моделей:
 - [20251214-20251214-agentic_disease_spread_catboost_pollutant_with_beta-infected_90d-dataset](https://huggingface.co/datasets/agarkov-aleksei1/20251214-agentic_disease_spread_catboost_pollutant_with_beta-infected_90d-dataset)
 - [20251214-agentic_disease_spread_catboost_pollutant-infected_90d-dataset](https://huggingface.co/datasets/agarkov-aleksei1/20251214-agentic_disease_spread_catboost_pollutant-infected_90d-dataset)
 
