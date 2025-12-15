@@ -161,5 +161,5 @@ https://github.com/AlekseiAgarkov/MIFIML-2-Sem1-M25-525-Project-Practice/blob/ma
   - [Colab версия](https://colab.research.google.com/drive/1vsM7LGdpeMFpMvkMexOowuMjgGZ51ihD)
   - [.ipynb версия](https://github.com/AlekseiAgarkov/MIFIML-2-Sem1-M25-525-Project-Practice/blob/main/notebooks/20251214_Train_and_upload_model.ipynb)
 - Ноутбук "20251214 - Model Usage"
-  - [Colab версия](https://github.com/AlekseiAgarkov/MIFIML-2-Sem1-M25-525-Project-Practice/blob/main/notebooks/20251214_Train_and_upload_model.ipynb)
+  - [Colab версия](https://colab.research.google.com/drive/1RhfjL2WVjdpBdHr2fB1-s5X0zWAU-xnv?usp=sharing)
   - [.ipynb версия](https://github.com/AlekseiAgarkov/MIFIML-2-Sem1-M25-525-Project-Practice/blob/main/notebooks/20251214_Model_Usage.ipynb)
