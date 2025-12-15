@@ -163,9 +163,56 @@
 https://github.com/AlekseiAgarkov/MIFIML-2-Sem1-M25-525-Project-Practice/blob/main/data/project_practice_20251214.csv
 
 ## Материалы
+Материалы доступны по ссылкам:
 - Ноутбук "20251214 - Train and upload model
   - [Colab версия](https://colab.research.google.com/drive/1vsM7LGdpeMFpMvkMexOowuMjgGZ51ihD)
   - [.ipynb версия](https://github.com/AlekseiAgarkov/MIFIML-2-Sem1-M25-525-Project-Practice/blob/main/notebooks/20251214_Train_and_upload_model.ipynb)
 - Ноутбук "20251214 - Model Usage"
   - [Colab версия](https://colab.research.google.com/drive/1RhfjL2WVjdpBdHr2fB1-s5X0zWAU-xnv?usp=sharing)
   - [.ipynb версия](https://github.com/AlekseiAgarkov/MIFIML-2-Sem1-M25-525-Project-Practice/blob/main/notebooks/20251214_Model_Usage.ipynb)
+
+## Инструкция по использованию
+Для локального воспроизведения ноутбука ["20251214 - Model Usage"](https://github.com/AlekseiAgarkov/MIFIML-2-Sem1-M25-525-Project-Practice/blob/main/notebooks/20251214_Model_Usage.ipynb) 
+необходимо выполнить следующие шаги.
+
+### 1. Клонирование репозитория
+```shell
+git clone https://github.com/AlekseiAgarkov/MIFIML-2-Sem1-M25-525-Project-Practice.git
+cd MIFIML-2-Sem1-M25-525-Project-Practice
+```
+
+### 2. Создание виртуального окружения
+```shell
+python -m venv venv
+```
+
+### 3. Активация виртуального окружения
+Linux/MacOS:
+```shell
+source venv/bin/activate
+```
+
+Windows (PowerShell):
+```shell
+venv\Scripts\Activate
+```
+
+Windows (CMD):
+```shell
+venv\Scripts\activate.bat
+```
+
+### 4. Установка зависимостей
+```shell
+pip install -r requirements.txt
+```
+
+### 5. Запуск jupyter сервера
+```shell
+jupyter notebook --port=8888
+```
+
+### 5. Запуск jupyter сервера
+Перейти в браузере по ссылке http://localhost:8888/notebooks/notebooks/20251214_Model_Usage.ipynb
+
+Ссылка может отличаться в зависимости от фактического порта Jupyter сервера.
